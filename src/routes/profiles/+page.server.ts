@@ -80,7 +80,7 @@ export const actions = {
 	// 	return { success: true };
 	// },
 
-  delete: async ({ request }) => {
+  delete: async ({ request }:any) => {
     const data = await request.formData();
     const db = createPool({ connectionString: POSTGRES_URL })
     const client = await db.connect();
@@ -94,7 +94,7 @@ export const actions = {
 		return { success: true };
 	},
 
-	create: async ({request}) => {
+	create: async ({request}:any) => {
 		const data = await request.formData();
     const db = createPool({ connectionString: POSTGRES_URL })
     const client = await db.connect();
