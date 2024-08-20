@@ -1,5 +1,5 @@
 // import { error } from '@sveltejs/kit';
-import { createPool, sql } from '@vercel/postgres'
+import { createPool } from '@vercel/postgres'
 import { POSTGRES_URL } from '$env/static/private'
 
 export async function load() {
